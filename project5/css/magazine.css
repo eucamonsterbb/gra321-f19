@@ -1,0 +1,16 @@
+/* Styles for Project 5 */
+
+/* font-family: 'Alegreya Sans', sans-serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'PT Sans', sans-serif;*/
+
+body {
+    padding-left: 3%;
+}
+
+#top_left {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+    color: #434544;
+    
+}
