@@ -2,98 +2,102 @@
 <html>
     <head>
     <title>Qijia "Euca" You_Project 3</title>
-    <link rel="stylesheet" href="https://use.typekit.net/kog3qtm.css">
     <link rel="stylesheet" type="text/css" href="css/magazine.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|DM+Serif+Display|PT+Sans&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <div id="left_wrapper">
-        <p id="top_left">
+    <div class="split left_div">
+        <p class="text_left_top">
            Exraordnary moments happen on ordinary days.
            <br>Let's set the stage for the extraordinary to happen every days.
         </p>
-
-        <img src="img/corner.jpg" alt="left img1">
-        <img src="img/plants.jpg" alt="left img2">
-        
-        <div id="left_text">
-            <p>
-               Our passionate team, cordially invites you to visit our new bulthaup
-                <br>showroom in Greenwich. Together we can create the kitchen of
-                <br>your dreams by exploring the unique materials, technical precision,
-                <br>timeless form and streamlined functionality of bulthaup.
-            </p>
-
-            <p>
-                bulthaup Greenwich
-                <br>95 East Putnam Ave.
-                <br>Greenwich, CT 06830
-                <br>Tel.+1 203 769 5588
-                <br>bulthaup.com
-            </p>
-        
-        </div><!--closed left_text-->
-
-        <h1>bulthaup</h1>
-        <h1>Greenwich</h1> 
-        
-    </div><!--closed left_wrapper-->
-    
-    <div id="right_wrapper">
-        <h2>In This Issue</h2>
-        <p>Spring 2019 | Volume 10, Issue 2</p>
-        
-        <img src="img/dinningroom.jpg" alt="right img1">
-        <img src="img/petcorner.jpg" alt="right img2">
-        <img src="img/vase.jpg" alt="right img3">
-        
-        <div id="right_text">
-            <p>FEATURED HOMES</p>
-
-            <h4>122 SAFE HARBOR</h4>
-            <p>
-                Custom touches turn a brand-new
-                <br>waterfront townhouse in Greenwich into
-                <br>a warm, personal sanctuary.
-            </p>
-            <p>Text by Bob Curley</p>
-            <p>Photography by Michael Partenio</p>
-            <p>Produced by Stacy Kunstel</p>
-
-            <h4>132 TRUE TO FORM</h4>
-            <p>
-                A Westport home remains faithful to its
-                <br>midcentury pedigree without becoming
-                <br>a slave to the past.
-            </p>
-            <p>Text by Judge Silber</p>
-            <p>Photography by Tria Giovan</p>
-            <p>Produced by Stacy Kunstel</p>
-
-            <h4>144 HOW DARE SHE</h4>
-            <p>
-                A designer's bold vision merges
-                <br>traditional and modern to give a
-                <br>nineteenth-century Southport house
-                <br>a vivacious new look.
-            </p>
-            <p>Text by Annie Sherman</p>
-            <p>Photography by Michael Partenio</p>
-            <p>Produced by Stacy Kunstel</p>
-        
-        </div><!--closed right_text-->
+        <section class="container_left">
+            <div class="container_left_left">
+                <img class="img_general img_left" src="img/corner.jpg" alt="left img1">
+                <p class="text_left_left">
+                   Our passionate team, cordially invites you to visit our new bulthaup showroom in Greenwich. Together we can create the kitchen of your dreams by exploring the unique materials, technical precision, timeless form and streamlined functionality of bulthaup.
+                </p>
+                <p class="text_left_left">
+                    bulthaup Greenwich
+                    <br>95 East Putnam Ave.
+                    <br>Greenwich, CT 06830
+                    <br>Tel.+1 203 769 5588
+                    <br>bulthaup.com
+                </p>
+            </div>
+            <div class="container_left_right">
+                <img class="img_general img_left" src="img/plants.jpg" alt="left img2">
+                <p class="text_left_right">
+                    bulthaup
+                    <br><span id="text_greenwich">Greenwich</span>
+                </p>
+            </div>
             
-        <p>
-            ON THE COVER: Elegance and a dose of drama come together in a waterfront
-            <br>townhouse in Greenwich, with interior design by Lauren Muse. Photograph by Michael Partenio.
-            <br>To see more of this home, turn to page 122.
-        </p>
-        
+        </section>
+        <div>
+            <a href="../index.html" title="Course Home Page">Back to Course Home Page</a>
+        </div>
     </div>
     
     
     
-    <a href="../index.html" title="Course Home Page">Back to Course Home Page</a>
+    
+    <div class="split right_div">
+        <p class="text_right_top_up">In This Issue</p>
+        <p class="text_right_top_down">Spring 2019 | Volume 10, Issue 2</p>
+        <section class="container_right">
+            <div class="container_right_left">
+                
+                <img class="img_general" id="img_dinningroom" src="img/dinningroom.jpg" alt="right img1">
+                <img class="img_general" id="img_vase" src="img/vase.jpg" alt="right img3">
+                <p class="text_right_bottom_left">
+                    <span id="text_on_the_cover">ON THE COVER:</span> Elegance and a dose of drama come together in a waterfront
+                    <span> townhouse in Greenwich, with interior design by Lauren Muse. Photograph by Michael Partenio.To see more of this home, turn to page 122.</span>
+                </p>
+
+            </div>
+            <div class="container_right_right">
+                <img class="img_general" id="img_petcorner" src="img/petcorner.jpg" alt="right img2">
+                <div class="text_right_bottom_right">
+                    <p class="text_right_bottom_right_FH">FEATURED HOMES</p>
+
+                    <h4 class="text_right_bottom_right_title">122 SAFE HARBOR</h4>
+                    <p class="text_right_bottom_right_narrative">
+                        Custom touches turn a brand-new waterfront townhouse in Greenwich into a warm, personal sanctuary.
+                    </p>
+                    <ul>
+                        <li class="text_right_bottom_right_title_list">Text by Bob Curley</li>
+                        <li class="text_right_bottom_right_title_list">Photography by Michael Partenio</li>
+                        <li class="text_right_bottom_right_title_list">Produced by Stacy Kunstel</li>
+                    </ul>
+
+                    <h4 class="text_right_bottom_right_title">132 TRUE TO FORM</h4>
+                    <p class="text_right_bottom_right_narrative">
+                        A Westport home remains faithful to its midcentury pedigree without becoming a slave to the past.
+                    </p>
+                    <ul>
+                        <li class="text_right_bottom_right_title_list">Text by Judge Silber</li>
+                        <li class="text_right_bottom_right_title_list">Photography by Tria Giovan</li>
+                        <li class="text_right_bottom_right_title_list">Produced by Stacy Kunstel</li>
+                    </ul>
+                    
+                    <h4 class="text_right_bottom_right_title">144 HOW DARE SHE</h4>
+                    <p class="text_right_bottom_right_narrative">
+                        A designer's bold vision merges traditional and modern to give a nineteenth-century Southport house a vivacious new look.
+                    </p>
+                    <ul>
+                        <li class="text_right_bottom_right_title_list">Text by Annie Sherman</li>
+                        <li class="text_right_bottom_right_title_list">Photography by Michael Partenio</li>
+                        <li class="text_right_bottom_right_title_list">Produced by Stacy Kunstel</li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </section>   
+    </div>
+    
+    
 </body>
 </html>

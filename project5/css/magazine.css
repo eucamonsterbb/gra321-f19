@@ -5,12 +5,172 @@ font-family: 'DM Serif Display', serif;
 font-family: 'PT Sans', sans-serif;*/
 
 body {
-    padding-left: 3%;
+/*    padding-left: 3%;*/
+    font-size: 100%;
 }
 
-#top_left {
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+/* Control the screen left side */
+.left_div {
+    left: 0;   
+}
+
+/* Control the screen right side */
+.right_div {
+    right: 0;
+}
+
+.container_left {
+    display: flex;
+    padding-top: 1%;
+}
+
+.container_left_left {
+    padding-left: 5%;
+    flex: 1.21;
+    padding-right: 0.85%;
+}
+
+.container_left_right {
+    flex: 1;
+    padding-right: 4%;
+}
+
+.container_right {
+  display: flex;
+}
+
+.container_right_left {
+    flex: 1.49;
+    padding-right: 0.85%;
+}
+
+.container_right_right {
+    flex: 1;
+}
+
+.img_general {
+    width: 100%;
+}
+
+.img_left {
+    margin-top: 90px
+}
+
+.text_left_top {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 20px;
+    font-size: 150%;
+    padding-top: 5%;
+    padding-left: 5%;
     color: #434544;
+}
+
+.text_left_left {
+    width: 90%;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 73%;
+    line-height: 1.1;
+    color: #b4a8b5;
+}
+
+.text_left_right {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 270%;
+    margin-top: 28%;
+    text-align: right;
+    line-height: 0.9;
+}
+
+.text_right_top_up {
+    font-size: 160%;
+    border-left: 8px solid #c93a76;
+    line-height: 75%;
+    height: 18px;
+    padding-left: 10px;
+    margin-left: 6%;
+    margin-top: 6%;
+}
+
+.text_right_top_down {
+    font-size: 60%;
+    margin-top: -2%;
+    margin-left: 6%;
+}
+
+.text_right_bottom_left {
+    margin-left: 6%;
+    font-size: 60%;
+}
+
+.text_right_bottom_right_FH {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 80%;
+    padding-left: 13%;
+    color: #6b6b6b;
+    margin-bottom: -18px;
+}
+
+.text_right_bottom_right_title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 88%;
+    margin-bottom: -4px;
+    padding-left: 5%;
     
 }
+
+.text_right_bottom_right_narrative {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 85%;
+    padding-left: 13%;
+    margin-top: 2%;
+    color: #6b6b6b;
+    margin-bottom: -6px;
+    
+    
+}
+
+.text_right_bottom_right_title_list {
+    list-style-type:none;
+    border-left: 2px solid #bf30cf;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 80%;
+    color: #6b6b6b;
+}
+
+
+#text_greenwich {
+    font-size: 90%;
+    color: #b4a8b5;
+}
+
+#text_on_the_cover {
+    font-size: 7px;
+    font-weight: bold;
+}
+
+#img_dinningroom {
+    margin-top: 8%;
+    margin-bottom: 1.5%
+}
+
+#img_petcorner {
+    margin-top: -22%;
+}
+
+#img_vase {
+    width: 80%;
+    margin-left: 20%;
+}
+
+
+
+
