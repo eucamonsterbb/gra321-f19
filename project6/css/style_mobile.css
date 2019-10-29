@@ -1,0 +1,366 @@
+
+body {
+    max-width: 375px;
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
+
+
+/* hamberger_menu */
+.container {
+  display: inline-block;
+  margin: 20px 15px;
+  cursor: pointer;
+  height: 39px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 2px;
+  background-color: aliceblue;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+/*
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+*/
+
+/* navigation */
+.navigation {
+    background-color: #412222;
+    width: 375px;
+    height: 69px;
+    display: flex;
+}
+
+.logo{
+    margin: 15px 75px;
+    width: 96px;
+    height: 39px;
+}
+
+/* gallery */
+.gallery {
+    
+}
+.inside1 {
+    max-width: 375px;
+    
+}
+
+/* menu */
+.menu {
+    max-width: 375px;
+    margin-top: 25px;
+    text-align: center;
+}
+.category {
+    font-family: brevia,sans-serif;
+    font-weight: 510;
+    font-style: normal;
+    font-size: 14px;
+    color: #707070;
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.category p {
+    margin: 0 20px;
+    letter-spacing: 2px;
+}
+
+.pic_wrap {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.drinkpic {
+    max-width: 330px;
+}
+
+.drink_name {
+    max-width: 330px;
+    height: 1020px;
+    background-image: url(../img/%E8%8A%B1%E8%BE%B9.png);
+    background-size: 330px 1050px;
+    background-repeat: no-repeat;
+    border-color: #412222;
+    margin: 0 auto;
+    padding-top: 30px;
+    
+}
+
+.drink_title {
+    max-width: 265px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.drink_title h2 {
+    font-family: brevia,sans-serif;
+    font-weight: 520;
+    font-style: normal;
+    font-size: 11px;
+    color: #412222;
+    letter-spacing: 2px;
+    margin-bottom: 1px;
+
+}
+
+.price {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.price p {
+    font-family: brevia,sans-serif;
+    font-weight: 520;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 10.5px;
+    margin: 0;
+      color: #412222;
+}
+
+.lists {
+    display: flex;
+}
+.drink_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.drink_list h2{
+    font-family: brevia,sans-serif;
+    font-weight:100;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+.drink_list h3{
+    font-family: athelas,serif;
+    font-weight:100;
+    font-style: italic;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin: 0 0 0 6px;
+}
+
+
+.price_sml {
+    font-family: brevia,sans-serif;
+    font-weight:100;
+    font-style: normal;
+    font-size: 10px;
+    color: #412222;
+    letter-spacing: 1px;
+    margin-top: 8px;
+}
+
+.price_sml p {
+    margin: 0 0 9px 0;
+    padding-left: 5px;
+    text-align: center;
+}
+
+
+
+
+/* Locations & Hours */
+.title {
+    margin-top: 50px;
+    max-width: 375px;
+    text-align: center;
+    background-image:url(../img/bgd.png);
+    padding: 50px 0;
+
+}
+.LH {
+    font-family: athelas,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 5px;
+    max-width: 375px;
+    margin-bottom: 20px;
+    color: #412222;
+
+}
+
+.locations {
+    background-color: white;
+    margin:0 auto;
+    padding: 20px 20px 30px 20px;
+    max-width: 245px;
+    align-items: center;
+    
+}
+
+.locations h3 {
+    font-family: brevia, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6e6c6b;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+        
+}
+
+.locations p {
+    font-family: brevia, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top:4px
+}
+
+.devider {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pot {
+    max-width: 119px;
+}
+
+.phone_email {
+    text-align: center;
+}
+
+.phone_email h3 {
+    font-family: brevia, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #412222;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+.phone_email p {
+    font-family: brevia, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top:2px;
+    color: #412222;
+    letter-spacing: 1.5px;
+}
+
+.socialmedia {
+    display: flex;
+    max-width: 375px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px
+}
+
+.socialmedia img {
+    max-width: 25px;
+}
+
+.socialmedia div {
+    margin: 30px 10px;
+}
+
+.footer {
+    max-width: 375px;
+    height: 180px;
+    list-style-type: none;
+    padding-top: 55px;
+    background-color: darkgray;
+    background-image: url(../img/coffeebean_crop.png);
+    background-size: 375px 244px;
+    background-repeat: no-repeat;
+}
+
+.footer_nav{
+    max-width: 165px;
+    list-style-type: none;
+    font-family: athelas,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    color: #412222;
+    letter-spacing: 4px;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 75%;
+}
+
+.footer_nav div {
+    margin-top: 5px; 
+}
+
+.copyright {
+    max-width: 375px;
+    height:10px;
+    background-color: #412222;
+    padding-top: 4px;
+    text-align: center;
+}
+
+.copyright p {
+    font-family: athelas,serif;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 5px;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
