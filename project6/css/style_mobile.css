@@ -423,9 +423,10 @@
     font-family: brevia, sans-serif;
     font-size: 16px;
     text-align: left;
-    padding: 30px 0;
+    padding: 0px 0;
     color: #412222;
     font-weight: 520;
+    margin-top: 40px;
   }
   .conlist .tit {
     font-family: brevia, sans-serif;
@@ -796,12 +797,13 @@
   .gallery .applelatte img {
     width: 80%;
     margin: auto;
+    margin-bottom: 20px;
   }
   .gallery .applelatte .txt {
     font-size: 16px;
     color: #333;
     text-align: center;
-    padding: 30px 0;
+    padding: 10px 0;
     line-height: 30px;
   }
   .gallery .inside1 {
@@ -852,13 +854,18 @@
     margin-bottom: 1px;
   }
   /* list */
+    
+    .drink_title {
+     
+    }
   .drink_title > h2 {
     font-family: brevia, sans-serif;
     font-size: 16px;
     text-align: left;
-    padding: 14px 0;
+    padding: 0px 0;
     color: #412222;
     font-weight: 520;
+    margin-top: 40px;
   }
   .conlist .tit {
     font-family: brevia, sans-serif;
