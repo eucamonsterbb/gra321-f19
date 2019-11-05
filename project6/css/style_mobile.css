@@ -1,95 +1,201 @@
-
-body {
-    max-width: 375px;
+.applelatte {
+  display: none;
 }
 
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+.applelatte p {
+    font-family: brevia, sans-serif;
+    font-weight: 520;
+    font-style: normal;
 }
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+.maintit {
+  display: none;
 }
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
+.pcmenu {
+  display: none;
 }
-
-
-/* hamberger_menu */
-.container {
-  display: inline-block;
-  margin: 20px 15px;
-  cursor: pointer;
-  height: 39px;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 30px;
-  height: 2px;
-  background-color: aliceblue;
-  margin: 6px 0px;
-  transition: 0.4s;
-}
-
-/*
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-*/
-
-/* navigation */
-.navigation {
+@media screen and (max-width: 749px) {
+  body,
+  html {
+    /* max-width: 375px; */
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .place {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 22px;
+    height: 27px;
+    display: inline-block;
+    background: transparent url('../img/place.png') no-repeat top scroll;
+  }
+  .inside1 {
+    /* max-width: 375px; */
+    display: block;
+    width: 100%;
+  }
+  .drink_name {
+    /* max-width: 330px; */
+    width: 100%;
+    height: 1020px;
+    background-image: url(../img/%E8%8A%B1%E8%BE%B9.png);
+    background-size: 90% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: #412222;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .drink_title {
+    max-width: 265px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .drink_title h2 {
+    font-family: brevia, sans-serif;
+    font-weight: 520;
+    font-style: normal;
+    font-size: 11px;
+    color: #412222;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 1px;
+  }
+  .drink_list h2 {
+    font-family: brevia, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #412222;
+  }
+  .conlist .tit {
+    font-family: brevia, sans-serif;
+    font-weight: 520;
+    font-style: normal;
+    font-size: 10px;
+    color: #412222;
+    letter-spacing: 2px;
+    margin-bottom: 1px;
+  }
+  .conlist .line {
+    border-top: 2px dotted #412222;
+    margin-top: 16px;
+    padding: 0 0 11px 0;
+    margin: 7px 10px 0 10px;
+  }
+  .conlist .price_sml {
+    width: 30px;
+    margin: 0px 0 9px 0;
+    padding-left: 0px;
+    text-align: center;
+    font-size: 10px;
+  }
+  .LH {
+    font-family: athelas, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 5px;
+    /* max-width: 375px; */
+    width: 100%;
+    margin-bottom: 20px;
+    color: #412222;
+  }
+  .footer {
+    width: 100%;
+    height: 180px;
+    list-style-type: none;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: darkgray;
+    background-image: url(../img/coffeebean_crop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .footer_nav {
+    /* max-width: 165px; */
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.6);
+    list-style-type: none;
+    font-family: athelas, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    color: #412222;
+    letter-spacing: 4px;
+    color: #333;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 75%;
+  }
+  .footer_nav div {
+    margin-top: 5px;
+  }
+  .copyright {
+    /* max-width: 375px; */
+    width: 100%;
+    height: 10px;
     background-color: #412222;
-    width: 375px;
+    padding-top: 4px;
+    text-align: center;
+  }
+  .copyright p {
+    font-family: athelas, serif;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 5px;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0 auto;
+  }
+  /* orgin */
+  /* hamberger_menu */
+  .container {
+    display: inline-block;
+    cursor: pointer;
+    height: 39px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: aliceblue;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+  /* navigation */
+  .navigation {
+    background-color: #412222;
+    /* width: 375px; */
+    width: 100%;
     height: 69px;
     display: flex;
-}
-
-.logo{
-    margin: 15px 75px;
+    position: relative;
+  }
+  .logo {
+    margin: 15px auto;
     width: 96px;
     height: 39px;
-}
-
-/* gallery */
-.gallery {
-    
-}
-.inside1 {
-    max-width: 375px;
-    
-}
-
-/* menu */
-.menu {
+  }
+  /* menu */
+  .menu {
     max-width: 375px;
     margin-top: 25px;
     text-align: center;
-}
-.category {
-    font-family: brevia,sans-serif;
+  }
+  .category {
+    font-family: brevia, sans-serif;
     font-weight: 510;
     font-style: normal;
     font-size: 14px;
@@ -99,144 +205,476 @@ body {
     margin-bottom: 18px;
     align-items: center;
     justify-content: center;
-}
-
-.category p {
+  }
+  .category p {
     margin: 0 20px;
     letter-spacing: 2px;
-}
-
-.pic_wrap {
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.drinkpic {
-    max-width: 330px;
-}
-
-.drink_name {
-    max-width: 330px;
-    height: 1020px;
-    background-image: url(../img/%E8%8A%B1%E8%BE%B9.png);
-    background-size: 330px 1050px;
-    background-repeat: no-repeat;
-    border-color: #412222;
-    margin: 0 auto;
-    padding-top: 30px;
-    
-}
-
-.drink_title {
-    max-width: 265px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.drink_title h2 {
-    font-family: brevia,sans-serif;
-    font-weight: 520;
-    font-style: normal;
-    font-size: 11px;
+  }
+  .category .sure {
     color: #412222;
-    letter-spacing: 2px;
-    margin-bottom: 1px;
-
-}
-
-.price {
-  text-align: right;
-  margin-bottom: 5px;
-}
-
-.price p {
-    font-family: brevia,sans-serif;
+  }
+  .pic_wrap {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .drinkpic {
+    width: 100%;
+  }
+  .price {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+  .price p {
+    font-family: brevia, sans-serif;
     font-weight: 520;
     font-style: normal;
     font-size: 10px;
     letter-spacing: 10.5px;
     margin: 0;
-      color: #412222;
-}
-
-.lists {
+    color: #412222;
+  }
+  .lists {
     display: flex;
-}
-.drink_list {
+  }
+  .drink_list {
     display: flex;
     flex-direction: column;
-}
-
-.drink_list h2{
-    font-family: brevia,sans-serif;
-    font-weight:100;
-    font-style: normal;
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin-top: 8px;
-    text-transform: uppercase;
-}
-
-.drink_list h3{
-    font-family: athelas,serif;
-    font-weight:100;
+  }
+  .drink_list h3 {
+    font-family: athelas, serif;
+    font-weight: 100;
     font-style: italic;
     font-size: 9px;
     letter-spacing: 2px;
     margin: 0 0 0 6px;
-}
-
-
-.price_sml {
-    font-family: brevia,sans-serif;
-    font-weight:100;
+  }
+  .price_sml {
+    font-family: brevia, sans-serif;
+    font-weight: 100;
     font-style: normal;
     font-size: 10px;
     color: #412222;
     letter-spacing: 1px;
     margin-top: 8px;
-}
-
-.price_sml p {
+  }
+  .price_sml p {
     margin: 0 0 9px 0;
     padding-left: 5px;
     text-align: center;
-}
-
-
-
-
-/* Locations & Hours */
-.title {
+  }
+  /* Locations & Hours */
+  .title {
     margin-top: 50px;
-    max-width: 375px;
+    /* max-width: 375px; */
+    width: 100%;
     text-align: center;
-    background-image:url(../img/bgd.png);
+    background-image: url(../img/bgd.png);
     padding: 50px 0;
-
-}
-.LH {
-    font-family: athelas,serif;
+  }
+  .locations {
+    background-color: white;
+    margin: 0 auto;
+    width: 70%;
+    align-items: center;
+  }
+  .locations h3 {
+    font-family: brevia, sans-serif;
+    font-style: normal;
     font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6e6c6b;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .locations p {
+    font-family: brevia, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+  .devider {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .pot {
+    /* max-width: 119px; */
+    width: 40%;
+    margin: auto;
+  }
+  .phone_email {
+    text-align: center;
+  }
+  .phone_email h3 {
+    font-family: brevia, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #412222;
+    margin-bottom: 0px;
+    margin-top: 40px;
+  }
+  .phone_email p {
+    font-family: brevia, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 2px;
+    color: #412222;
+    letter-spacing: 1.5px;
+  }
+  .socialmedia {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+  }
+  .socialmedia img {
+    /* max-width: 25px */
+    width: 100%;
+  }
+  .socialmedia div {
+    margin: 30px 10px;
+  }
+  .navigation ul {
+    display: none;
+  }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {} */
+/* ----------- Non-Retina Screens ----------- */
+/* @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {} */
+/* ----------- Retina Screens ----------- */
+/* @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {} */
+@media screen and (min-width: 750px) and (max-width: 960px) {
+  .navigation ul {
+    display: none;
+  }
+  body {
+    /* max-width: 375px; */
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .place {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 22px;
+    height: 27px;
+    display: inline-block;
+    background: transparent url('../img/place.png') no-repeat top scroll;
+  }
+  .inside1 {
+    /* max-width: 375px; */
+    width: 100%;
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .category p {
+    font-size: 24px;
+  }
+  .pic_wrap img {
+    max-width: 1200px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .drink_name {
+    background-image: url(../img/%E8%8A%B1%E8%BE%B9.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-color: #412222;
+    margin: 50px 30px;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .drink_name .drink_title {
+    width: 44%;
+    margin: 0 3%;
+    float: left;
+  }
+  .drink_name .drink_title .price p {
+    font-size: 12px;
+  }
+  .drink_list h2 {
+    font-family: brevia, sans-serif;
+    font-weight: 520;
     font-style: normal;
     font-size: 12px;
+    color: #412222;
+    letter-spacing: 2px;
+    margin-bottom: 1px;
+  }
+  /* list */
+  .drink_title > h2 {
+    font-family: brevia, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    padding: 30px 0;
+    color: #412222;
+    font-weight: 520;
+  }
+  .conlist .tit {
+    font-family: brevia, sans-serif;
+    font-weight: 520;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #412222;
+  }
+  .conlist .line {
+    border-top: 4px dotted #412222;
+    margin-top: 10px;
+    padding: 0 0 11px 0;
+    margin: 10px 10px 0 10px;
+  }
+  .conlist .price_sml {
+    font-family: brevia, sans-serif;
+    width: 34px;
+    margin: 2px 0 9px 0;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .btn-group {
+    display: flex;
+  }
+  .btn {
+    flex-grow: 1;
+  }
+  .LH {
+    font-family: athelas, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
     letter-spacing: 5px;
-    max-width: 375px;
+    /* max-width: 375px; */
+    width: 100%;
     margin-bottom: 20px;
     color: #412222;
-
-}
-
-.locations {
-    background-color: white;
-    margin:0 auto;
-    padding: 20px 20px 30px 20px;
-    max-width: 245px;
+  }
+  .title .locations {
+    overflow: hidden;
+    padding-top: 30px;
+    background: #fff;
+    display: block;
+    width: 94%;
+    padding-bottom: 30px;
+  }
+  .title .locations > div {
+    float: left;
+    width: 33%;
+  }
+  .title .locations h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  .title .locations p {
+    font-size: 16px;
+    color: #666;
+  }
+  .title .devider {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .title .phone_email h3 {
+    font-size: 20px;
+  }
+  .title .phone_email p {
+    font-size: 16px;
+  }
+  .title .socialmedia {
+    margin: auto;
+  }
+  .footer {
+    /* max-width: 375px; */
+    width: 100%;
+    list-style-type: none;
+    padding-top: 55px;
+    background-color: darkgray;
+    background-image: url(../img/coffeebean_crop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+  }
+  .footer_nav {
+    /* max-width: 165px; */
+    margin: 0 30px;
+    list-style-type: none;
+    font-family: athelas, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #412222;
+    letter-spacing: 4px;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+    opacity: 75%;
+    overflow: hidden;
+    display: flex;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .footer_nav div {
+    margin-top: 5px;
+    flex-grow: 1;
+  }
+  .copyright {
+    /* max-width: 375px; */
+    width: 100%;
+    height: 30px;
+    background-color: #412222;
+    padding-top: 4px;
+    text-align: center;
+  }
+  .copyright p {
+    font-family: athelas, serif;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0 auto;
+  }
+  /* orgin */
+  /* hamberger_menu */
+  .container {
+    display: inline-block;
+    cursor: pointer;
+    height: 39px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: aliceblue;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+  /* navigation */
+  .navigation {
+    background-color: #412222;
+    /* width: 375px; */
+    width: 100%;
+    height: 69px;
+    display: flex;
+    position: relative;
+  }
+  .logo {
+    margin: 15px auto;
+    width: 96px;
+    height: 39px;
+  }
+  /* menu */
+  .menu {
+    max-width: 375px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .category {
+    font-family: brevia, sans-serif;
+    font-weight: 510;
+    font-style: normal;
+    font-size: 14px;
+    color: #707070;
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 18px;
     align-items: center;
-    
-}
-
-.locations h3 {
+    justify-content: center;
+  }
+  .category p {
+    margin: 0 20px;
+    letter-spacing: 2px;
+  }
+  .category .sure {
+    color: #412222;
+  }
+  .pic_wrap {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .drinkpic {
+    width: 100%;
+  }
+  .price {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+  .price p {
+    font-family: brevia, sans-serif;
+    font-weight: 520;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 10.5px;
+    margin: 0;
+    color: #412222;
+  }
+  .lists {
+    display: flex;
+  }
+  .drink_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .drink_list h3 {
+    font-family: athelas, serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin: 0 0 0 6px;
+  }
+  .price_sml {
+    font-family: brevia, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 10px;
+    color: #412222;
+    letter-spacing: 1px;
+    margin-top: 8px;
+  }
+  .price_sml p {
+    margin: 0 0 9px 0;
+    padding-left: 5px;
+    text-align: center;
+  }
+  /* Locations & Hours */
+  .title {
+    margin-top: 50px;
+    /* max-width: 375px; */
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/bgd.png);
+    padding: 50px 0;
+  }
+  .locations {
+    background-color: white;
+    margin: 0 auto;
+    width: 70%;
+    align-items: center;
+  }
+  .locations h3 {
     font-family: brevia, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -249,34 +687,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-        
-}
-
-.locations p {
+  }
+  .locations p {
     font-family: brevia, sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 12px;
     margin-bottom: 0;
-    margin-top:4px
-}
-
-.devider {
+    margin-top: 4px;
+  }
+  .devider {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
-}
-
-.pot {
-    max-width: 119px;
-}
-
-.phone_email {
+  }
+  .pot {
+    /* max-width: 119px; */
+    width: 20%;
+    margin: auto;
+  }
+  .phone_email {
     text-align: center;
-}
-
-.phone_email h3 {
+    overflow: hidden;
+    width: 94%;
+  }
+  .phone_email .box {
+    width: 33%;
+    float: left;
+  }
+  .phone_email h3 {
     font-family: brevia, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -286,81 +725,569 @@ body {
     color: #412222;
     margin-bottom: 0px;
     margin-top: 40px;
-}
-
-.phone_email p {
+  }
+  .phone_email p {
     font-family: brevia, sans-serif;
     font-style: italic;
     font-weight: 300;
     font-size: 12px;
     margin-bottom: 0;
-    margin-top:2px;
+    margin-top: 2px;
     color: #412222;
     letter-spacing: 1.5px;
-}
-
-.socialmedia {
+  }
+  .socialmedia {
     display: flex;
-    max-width: 375px;
+    width: 20%;
     align-items: center;
     justify-content: center;
-    margin-top: 10px
-}
-
-.socialmedia img {
-    max-width: 25px;
-}
-
-.socialmedia div {
+    margin: 30px auto 30px auto;
+    padding: 60px 0;
+  }
+  .socialmedia img {
+    /* max-width: 25px */
+    width: 100%;
+  }
+  .socialmedia div {
     margin: 30px 10px;
+  }
 }
-
-.footer {
-    max-width: 375px;
-    height: 180px;
-    list-style-type: none;
-    padding-top: 55px;
-    background-color: darkgray;
-    background-image: url(../img/coffeebean_crop.png);
-    background-size: 375px 244px;
+@media screen and (min-width: 961px) {
+  body {
+    /* max-width: 375px; */
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .maintit {
+    display: block;
+    padding-top: 120px;
+  }
+  .maintit span {
+    background: #412222;
+    width: 360px;
+    line-height: 60px;
+    display: block;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+  }
+  .container,
+  .place {
+    display: none;
+  }
+  .gallery {
+    overflow: hidden;
+  }
+  .gallery .applelatte {
+    display: block;
+    width: 30%;
+    float: left;
+    background-image: url(../img/bgd.png);
+    height: 46vw;
+  }
+  .gallery .applelatte .tit {
+    text-align: center;
+    font-size: 24px;
+    padding: 30px 0;
+  }
+  .gallery .applelatte img {
+    width: 80%;
+    margin: auto;
+  }
+  .gallery .applelatte .txt {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    padding: 30px 0;
+    line-height: 30px;
+  }
+  .gallery .inside1 {
+    float: right;
+    width: 70%;
+  }
+  .inside1 {
+    /* max-width: 375px; */
+    width: 100%;
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .category p {
+    font-size: 24px;
+  }
+  .pic_wrap img {
+    max-width: 1176px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .drink_name {
+    max-width: 1176px;
+    background-image: url(../img/%E8%8A%B1%E8%BE%B9.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-
-.footer_nav{
-    max-width: 165px;
-    list-style-type: none;
-    font-family: athelas,serif;
+    border-color: #412222;
+    margin: 0 auto 0 auto;
+    padding: 20px 0 30px 0;
+    overflow: hidden;
+  }
+  .drink_name .drink_title {
+    width: 40%;
+    margin: 0 5%;
+    float: left;
+  }
+  .drink_name .drink_title .price p {
+    font-size: 12px;
+  }
+  .drink_list h2 {
+    font-family: brevia, sans-serif;
+    font-weight: 520;
+    font-style: normal;
+    font-size: 12px;
+    color: #412222;
+    letter-spacing: 2px;
+    margin-bottom: 1px;
+  }
+  /* list */
+  .drink_title > h2 {
+    font-family: brevia, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    padding: 14px 0;
+    color: #412222;
+    font-weight: 520;
+  }
+  .conlist .tit {
+    font-family: brevia, sans-serif;
+    font-weight: 520;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #412222;
+  }
+  .conlist .line {
+    border-top: 4px dotted #412222;
+    padding: 0 0 11px 0;
+    margin: 10px 10px 0 10px;
+  }
+  .conlist .price_sml {
+    font-family: brevia, sans-serif;
+    width: 34px;
+    margin: 2px 0 9px 0;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .btn-group {
+    display: flex;
+  }
+  .btn {
+    flex-grow: 1;
+  }
+  .LH {
+    font-family: athelas, serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 10px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    /* max-width: 375px; */
+    width: 100%;
+    margin-bottom: 20px;
     color: #412222;
-    letter-spacing: 4px;
-    background-color: white;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto;
-    opacity: 75%;
-}
-
-.footer_nav div {
-    margin-top: 5px; 
-}
-
-.copyright {
-    max-width: 375px;
-    height:10px;
+  }
+  .title {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .copyright {
+    /* max-width: 375px; */
+    width: 100%;
+    height: 30px;
     background-color: #412222;
     padding-top: 4px;
     text-align: center;
-}
-
-.copyright p {
-    font-family: athelas,serif;
+  }
+  .copyright p {
+    font-family: athelas, serif;
     font-weight: 50;
     font-style: normal;
-    font-size: 5px;
+    font-size: 14px;
     color: white;
     letter-spacing: 1px;
     margin: 0 auto;
+  }
+  /* orgin */
+  /* hamberger_menu */
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: aliceblue;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+  /* navigation */
+  .navigation {
+    background-color: #412222;
+    /* width: 375px; */
+    width: 100%;
+    height: 69px;
+    display: flex;
+    position: relative;
+  }
+  .navigation .menu {
+    z-index: 2;
+  }
+  .navigation .menu li {
+    float: left;
+  }
+  .navigation .menu a {
+    color: #fff;
+    font-family: athelas, serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 16px;
+    padding: 0 25px;
+  }
+  .navigation .leftmenu {
+    position: absolute;
+    left: 16%;
+  }
+  .navigation .rightmenu {
+    position: absolute;
+    right: 12%;
+  }
+  .logo {
+    margin: 15px auto;
+    width: 96px;
+    height: 39px;
+  }
+  /* menu */
+  .menu {
+    max-width: 375px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .category {
+    font-family: brevia, sans-serif;
+    font-weight: 510;
+    font-style: normal;
+    font-size: 14px;
+    color: #707070;
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 18px;
+    align-items: center;
+    justify-content: center;
+  }
+  .category p {
+    margin: 0 20px;
+    letter-spacing: 2px;
+  }
+  .category .sure {
+    color: #412222;
+  }
+  .pic_wrap {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .drinkpic {
+    width: 100%;
+  }
+  .price {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+  .price p {
+    font-family: brevia, sans-serif;
+    font-weight: 520;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 10.5px;
+    margin: 0;
+    color: #412222;
+  }
+  .lists {
+    display: flex;
+  }
+  .drink_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .drink_list h3 {
+    font-family: athelas, serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin: 0 0 0 6px;
+  }
+  .price_sml {
+    font-family: brevia, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 10px;
+    color: #412222;
+    letter-spacing: 1px;
+    margin-top: 8px;
+  }
+  .price_sml p {
+    margin: 0 0 9px 0;
+    padding-left: 5px;
+    text-align: center;
+  }
+  /* Locations & Hours */
+  .title {
+    margin-top: 50px;
+    /* max-width: 375px; */
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/bgd.png);
+    padding: 50px 0;
+  }
+  .locations {
+    background-color: white;
+    margin: 0 auto;
+    width: 70%;
+    align-items: center;
+  }
+  .locations h3 {
+    font-family: brevia, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6e6c6b;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .locations p {
+    font-family: brevia, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+  .devider {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .pot {
+    /* max-width: 119px; */
+    width: 20%;
+    margin: auto;
+  }
+  .socialmedia {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 30px auto;
+    padding: 60px 0;
+  }
+  .socialmedia img {
+    /* max-width: 25px */
+    width: 100%;
+  }
+  .socialmedia div {
+    margin: 30px 10px;
+  }
+  .pcmenu {
+    display: block;
+  }
+  .pcmenu .devider {
+    width: 232px;
+    margin: 0 auto 30px auto;
+  }
+  .pcmenu .con1 {
+    position: relative;
+    overflow: hidden;
+  }
+  .pcmenu .con1 .left {
+    width: 50%;
+    float: left;
+  }
+  .pcmenu .con1 .map {
+    width: 50%;
+    float: left;
+  }
+  .pcmenu .con1 .tit {
+    font-family: athelas, serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    position: absolute;
+    width: 20vw;
+    top: 7vw;
+    left: 24.6vw;
+    height: 3vw;
+    color: #fff;
+    background: #412222;
+    line-height: 3vw;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    margin-left: 20px;
+  }
+  .pcmenu .con1 .locations {
+    position: absolute;
+    left: 14vw;
+    top: 13vw;
+    width: 31vw;
+  }
+  .pcmenu .con1 .locations h3 {
+    font-family: brevia, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vw;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6e6c6b;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    display: block;
+  }
+  .pcmenu .con1 .locations .desc {
+    width: 30%;
+    padding-right: 20%;
+  }
+  .pcmenu .con1 .locations p {
+    font-family: brevia, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.7vw;
+    margin-bottom: 0;
+    margin-top: 0vw;
+    float: left;
+    width: 50%;
+    padding-bottom: 1vw;
+  }
+  .pcmenu .con2 {
+    position: relative;
+    margin-top: 80px;
+    padding: 60px 186px 60px 186px;
+    background-image: url(../img/bgd.png);
+  }
+  .pcmenu .con2 .txt {
+    color: #fff;
+    background: #412222;
+    height: 3vw;
+    width: 20vw;
+    left: -15vw;
+    font-size: 1vw;
+    top: 10vw;
+    line-height: 3vw;
+    text-align: right;
+    padding-right: 1vw;
+    display: block;
+    position: absolute;
+  }
+  .pcmenu .con2 .line1 {
+    position: relative;
+  }
+  .pcmenu .con2 .line1 span {
+    font-family: athelas, serif;
+    font-weight: 100;
+      letter-spacing: 3px;
+    color: #fff;
+    background: #412222;
+    height: 3vw;
+    width: 20vw;
+    left: -15vw;
+    font-size: 15px;
+    top: 10vw;
+    line-height: 3vw;
+    text-align: right;
+    padding-right: 1vw;
+    display: block;
+    position: absolute;
+  }
+  .pcmenu .con2 .line1 img {
+    width: 90%;
+    padding-left: 10%;
+  }
+  .pcmenu .con2 .line1 .job {
+    position: absolute;
+    width: 16vw;
+    top: 6vw;
+    left: 11vw;
+  }
+  .pcmenu .con2 .line1 .job h3 {
+    font-family: brevia, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vw;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 2vw;
+    color: #412222;
+    margin-bottom: 0px;
+    margin-top: 1vw;
+    text-align: center;
+  }
+  .pcmenu .con2 .line1 .job p {
+    font-size: 1vw;
+    font-style: italic;
+    width: 10vw;
+    text-align: center;
+    margin: auto;
+    color: #412222;
+  }
+  .pcmenu .con2 .line2 {
+    position: relative;
+  }
+  .pcmenu .con2 .line2 img {
+    width: 100%;
+  }
+  .pcmenu .con2 .line2 .phone_email {
+    position: absolute;
+    width: 10vw;
+    left: 31%;
+    top: 3vw;
+  }
+  .pcmenu .con2 .line2 .phone.box {
+    margin-top: -1vw;
+  }
+  .pcmenu .con2 .line2 .E-mail.box {
+    margin-top: -3vw;
+  }
+  .pcmenu .con2 .line2 .phone_email h3 {
+    font-family: brevia, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vw;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0px;
+    margin-top: 3vw;
+    text-align: center;
+  }
+  .pcmenu .con2 .line2 .phone_email p {
+    font-family: brevia, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1vw;
+    margin-bottom: 0;
+    margin-top: 2px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding-bottom: 2vw;
+  }
 }
